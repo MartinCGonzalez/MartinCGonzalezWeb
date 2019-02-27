@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Martin C. Gonzalez</title>
+		<script type="application/javascript"
+			src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+		<script type="application/javascript"
+			src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
+		<script type="application/javascript"
+			src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat"
+			rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400i"
+			rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+
+	<body>
+		<div id="root"></div>
+		<script type="text/babel">
+
+	const rootElement = document.getElementById('root')
+	
+    class MartinWebPage extends React.Component { 
+    render() { 
+        return (
+            <div>
+        <section id="top" class="top">
+ 		    <header id="header" class="header">
+ 			<h1 id="nombre" class="transicion nombre">MARTIN C. GONZALEZ</h1>
+
+ 			<h3 id="tituloTop" class="tituloTop">Desarrollador</h3>
+
+ 			<ol class="frase">"Keep Calm and Keep coding."
+ 			</ol>
+ 		    </header>
+ 		    <section class="menu">
+  			<nav id="miMenu" class="menu ">
+ 			<ul class="itemsMenu">
+ 				<li>
+ 					<h5 class="barra">__________</h5>
+ 					<a class="transicion fuente home1" href="index.html">Home&nbsp;</a>	
+                 </li>
+                                
+				<li>
+ 					<a class="transicion fuente resume1" href="#portfolio">Portfolio&nbsp;</a>		
+                 </li>
+                 
+ 				<li>
+ 					<a class="transicion fuente contacto1" href="#contacto">Contacto&nbsp;</a>
+                 </li>
+                 
+ 				<li>
+ 					<a class="transicion fuente linkspersonales1" href="#links">Links Personales&nbsp;</a>
+                 </li>
+                 <li>
+ 					 <h5 class="barra">__________</h5>
+ 				</li>
+ 			</ul>
+ 		        </nav>
+ 		    </section>
+         </section>
+        
+        
+         <section id="perfil" className="perfil contenedor"> 
+        <h2 class="titulo">Home</h2>
+ 		<article class="descripcion">
+ 			
+
+ 			<div class="contenedor-perfil">
+			
+			<p class="texto"> Hola!, Soy <span class="nombreHome">Martin C. Gonzalez </span> y este es mi sitio web.</p>
+			</div>
+ 					
+ 		</article>
+        </section>
+        
+    <section id="portfolio" className="portfolio contenedor"> 
+		<h2 class="titulo">Portfolio</h2>
+ 		<article className="contenedor-portfolio">
+ 			
+			<div class="contenedor-columnas">	
+                
+          <div class="columna">
+ 					<img class="javaEE icon escala transicion" src="public/java.png"></img>
+					<h4 class="tituloColumn">Java</h4>
+										<a href="https://github.com/MartinCGonzalez/Crianza-App-Desktop" target="_blank">Proyecto Titulación Intermedia - App Desktop - UTEC</a>
+					<br></br>
+					<br></br>
+             <a href="https://github.com/MartinCGonzalez/Crianza-App-Web" target="_blank">Proyecto Titulación Final - App Web - UTEC</a>
+						 <br></br>
+						 <br></br>
+						 <a href="https://github.com/MartinCGonzalez/Crianza-App-Movil" target="_blank">Proyecto Titulación Final - App Movil - UTEC</a>
+          </div>
+                 
+          <div class="columna">
+ 					<img class="web icon escala transicion" src="public/web.png"></img>
+					<h4 class="tituloColumn">HTML / CSS / JS</h4>
+					<a href="https://github.com/MartinCGonzalez/WebPersonal" target="_blank">Web Personal</a>
+					<br></br>
+					<br></br>
+					<a href="https://github.com/MartinCGonzalez/React-Buscador" target="_blank">React - Buscador de Imágenes</a>
+ 				</div>
+
+ 				<div class="columna">
+ 					<img class="js icon escala transicion" src="public/android.png"></img>
+					 <h4 class="tituloColumn">Android</h4>
+					 <a href="https://github.com/MartinCGonzalez/BotoneraBentidaTv" target="_blank">GitHub - Aplicación Bentida Tv</a>
+					 <br></br>
+					 <br></br>
+					 <a href="https://play.google.com/store/apps/details?id=com.botonerabenditatv.botonerabendita" target="_blank">En Google Play -  Bentida Tv 4 ★</a>
+					 <br></br>
+					 <br></br>
+					 <a href="https://github.com/MartinCGonzalez/CatWallpapersHD" target="_blank">GitHub - Aplicación Cats Wallpapers</a>
+					 <br></br>
+					 <br></br>
+					 <a href="https://play.google.com/store/apps/details?id=com.catswallpapershd.catswallpapershd" target="_blank">En Google Play -  CatsWallpapersHd</a>
+ 				</div>
+
+ 			</div>
+				
+ 		</article>
+     </section>
+     
+     <section id="contacto" className="contacto contenedor ">
+        <h2 class="titulo">Contacto</h2>
+        <h5 class="contactoemail">Para contactarme puedes escribirme un e-mail:</h5>
+          <a href="mailto:martincaceres21@gmail.com">
+          <img  class="botonEmail" src="public/gmail.png"></img>
+            </a>
+    </section>
+
+    <footer class="footer">
+ 		<div id="contenedor">
+ 				<div class="links">
+ 				<p class="made-by-me"> Made by me © 2018.</p>
+ 				<div id="links" class="links cambioColor">
+
+ 				<a href="https://www.linkedin.com/in/martin-c-gonzalez-182b98150/" target="_blank">  
+ 				<img class="iconFoo brillo transicion" src="public/linkedin.png"></img></a>
+ 				<a href="https://twitter.com/MartinCGonzlez" target="_blank">  
+ 				<img class="iconFoo brillo transicion" src="public/twitter.png"></img></a>
+ 				<a href="https://github.com/MartinCGonzalez" target="_blank">  
+ 				<img class="iconFoo brillo transicion" src="public/git.png"></img></a>
+ 				</div>
+ 			</div>
+		 </div>
+	</footer>
+ </div>
+        
+      );
+      } 
+    }
+
+	function App(){
+  return(
+  <div>
+    <MartinWebPage />
+  </div>
+  )
+}
+    ReactDOM.render(
+      <App />,
+      rootElement
+    )
+</script>
+	</body>
+
+</html>
